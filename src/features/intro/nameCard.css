@@ -1,0 +1,57 @@
+/* src/components/NameCard.css */
+.name-card-container {
+  background-color: #f9fafb; /* Off-white background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.name-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar-large {
+  margin-right: 20px;
+}
+
+.name-card-text h1 {
+  padding-bottom: 8px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  color: #333; /* Dark gray text color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.links a:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 1.5rem; /* Adjust size as needed */
+  width: 0;
+}
+
+.typing {
+  animation: typing 2s steps(30, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

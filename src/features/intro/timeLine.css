@@ -1,0 +1,67 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+
+.lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.line-container {
+    display: flex;
+    flex-direction: row;
+    position: relative; /* Necessary for the pseudo-element */
+}
+
+.line-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px; /* Center the line */
+    width: 2px;
+    height: 100%; /* Full height of the container */
+    background-color: #000000; /* Light grey color for the line */
+  }
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #333333; /* Dark grey */
+  border-radius: 50%;
+  margin-top: 50px;
+  position: relative; /* Necessary for the pseudo-element */
+}
+
+
+
+.date {
+  width: 150px;
+  padding-top: 45px;
+}
+
+.card {
+  min-width: 300px;
+  width: 90%;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9fafb; /* Off-white background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-description {
+  margin-top: 10px;
+}
