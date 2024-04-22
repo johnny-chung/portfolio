@@ -2,6 +2,7 @@ import React from "react";
 import NameCard from "./Namecard";
 import SkillsShowcase from "./Skills";
 import Timeline from "./Timeline";
+import BackToTopButton from "../../ui/BackToTopBtn";
 
 const Intro: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Intro: React.FC = () => {
       <NameCard />
       <SkillsShowcase />
       <Timeline />
+      <BackToTopButton />
     </div>
   );
 };

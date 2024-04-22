@@ -9,10 +9,14 @@ const App: React.FC = () => {
     <Router>
       <div>
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Intro />} />
-          <Route path="/projects" element={<ProjectList />} />
-        </Routes>
+        <div style={{ paddingTop: "80px" }}>
+          {" "}
+          {/* Adjust 64px to match the height of your AppBar */}
+          <Routes>
+            <Route path="/" element={<Intro />} />
+            <Route path="/projects" element={<ProjectList />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );

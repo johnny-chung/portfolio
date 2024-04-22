@@ -2,12 +2,15 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  height: 400px; /* Adjust the height as needed */
+  position: relative; /* Ensure ::before and ::after pseudo-elements position relative to this container */
+  overflow: hidden; /* Clip content that extends beyond the container */
 }
 
-
 .lists {
-  display: flex;
-  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 400px; /* Set the maximum height of the timeline */
 }
 
 .item {
@@ -16,20 +19,20 @@
 }
 
 .line-container {
-    display: flex;
-    flex-direction: row;
-    position: relative; /* Necessary for the pseudo-element */
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
 .line-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 3px; /* Center the line */
-    width: 2px;
-    height: 100%; /* Full height of the container */
-    background-color: #000000; /* Light grey color for the line */
-  }
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3px; /* Center the line */
+  width: 2px;
+  height: 100%; /* Full height of the container */
+  background-color: #000000; /* Light grey color for the line */
+}
 
 .dot {
   width: 10px;
@@ -37,13 +40,11 @@
   background-color: #333333; /* Dark grey */
   border-radius: 50%;
   margin-top: 50px;
-  position: relative; /* Necessary for the pseudo-element */
+  position: relative;
 }
 
-
-
 .date {
-  width: 150px;
+  width: 180px;
   padding-top: 45px;
 }
 
@@ -64,4 +65,24 @@
 
 .card-description {
   margin-top: 10px;
+}
+
+
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px; /* Height of the fade effect */
+  background: linear-gradient(
+    transparent,
+    #ffffff
+  ); /* Gradient from transparent to white */
+  pointer-events: none; /* Make the overlay transparent to pointer events */
+}
+
+.timeline-container::after {
+  top: auto;
+  bottom: 0;
 }

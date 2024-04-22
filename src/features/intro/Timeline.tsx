@@ -1,45 +1,12 @@
 import React from "react";
 import { Paper, Typography } from "@mui/material";
 import "./timeLine.css";
-
-interface Experience {
-  date: string;
-  title: string;
-  description: string;
-}
-
-const experiences: Experience[] = [
-  {
-    date: "2018 - Present",
-    title: "Software Developer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod nisi velit.",
-  },
-  {
-    date: "2016 - 2018",
-    title: "Web Developer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod nisi velit.",
-  },
-  {
-    date: "2016 - 2018",
-    title: "Web Developer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod nisi velit.",
-  },
-  {
-    date: "2016 - 2018",
-    title: "Web Developer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod nisi velit.",
-  },
-  // Add more experiences as needed
-];
+import { experiences } from "./experience_data";
 
 const Timeline: React.FC = () => {
   return (
-    <div className="timeline-container">    
-    <h2 className="text-xl font-semibold mb-4">My Experience</h2>  
+    <div className="timeline-container">
+      <h2 className="text-xl font-semibold mb-4">My Journery</h2>
       <div className="lists">
         {experiences.map((experience, index) => (
           <div key={index} className="item">

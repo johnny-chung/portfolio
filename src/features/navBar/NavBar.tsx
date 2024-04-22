@@ -8,8 +8,8 @@ const NavBar: React.FC = () => {
 
   return (
     <AppBar
-      position="static"
-      style={{ background: "#F2F2F2", color: "#333333", boxShadow: "none" }}
+      position="fixed"
+      style={{ background: "#D4D4D4", color: "#1D2625", boxShadow: "none" }}
     >
       <Toolbar>
         <Typography
@@ -18,10 +18,13 @@ const NavBar: React.FC = () => {
           to="/"
           style={{
             textDecoration: "none",
-            color: "#333333",
+            color: "#283618",
             borderBottom:
-              location.pathname === "/" ? "2px solid #007bff" : "none",
+              location.pathname === "/" ? "2px solid #B7673C" : "none",
           }}
+          // Mouse-over effect
+          onMouseEnter={(e) => (e.currentTarget.style.color = "#B7673C")}
+          onMouseLeave={(e) => (e.currentTarget.style.color = "#283618")}
         >
           Home
         </Typography>
@@ -31,12 +34,15 @@ const NavBar: React.FC = () => {
           to="/projects"
           style={{
             textDecoration: "none",
-            color: "#333333",
-            marginLeft: 10,
+            color: "#283618",
+            marginLeft: 20,
             marginRight: "auto",
             borderBottom:
-              location.pathname === "/projects" ? "2px solid #007bff" : "none",
+              location.pathname === "/projects" ? "2px solid #B7673C" : "none",
           }}
+          // Mouse-over effect
+          onMouseEnter={(e) => (e.currentTarget.style.color = "#B7673C")}
+          onMouseLeave={(e) => (e.currentTarget.style.color = "#283618")}
         >
           Projects
         </Typography>

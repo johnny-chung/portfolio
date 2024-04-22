@@ -1,6 +1,5 @@
-/* src/components/NameCard.css */
 .name-card-container {
-  background-color: #f9fafb; /* Off-white background color */
+  background-color: #d8d5d6; /* Off-white background color */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
@@ -18,6 +17,10 @@
 
 .name-card-text h1 {
   padding-bottom: 8px;
+  color: #283618; /* Dark green-gray color */
+}
+.name-card-text h2 {
+  color: #3c492d; /* Dark green-gray color */
 }
 
 .links {
@@ -26,13 +29,13 @@
 }
 
 .links a {
-  color: #333; /* Dark gray text color */
+  color: #1D2625; /* Dark gray text color */
   text-decoration: none;
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .links a:hover {
-  color: #007bff; /* Blue color on hover */
+  color: #B7673C; /* Blue color on hover */
 }
 
 .typing-text {
