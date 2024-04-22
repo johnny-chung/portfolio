@@ -22,7 +22,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   };
 
   return (
-    <Card className="max-w-xs m-6 rounded-lg shadow-lg" sx={{ minWidth: "500px", bgcolor: "#eee9ea"  }}>
+    <Card
+      className="max-w-xs m-6 rounded-lg shadow-lg"
+      sx={{ minWidth: "300px", bgcolor: "#eee9ea" }}
+    >
       <Slider {...settings}>
         {project.images.map((image, index) => (
           <div key={index}>
@@ -34,7 +37,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <Typography variant="h5" component="h2" className="mb-4">
           {project.title}
         </Typography>
-        <Typography variant="body1" className="mb-6" sx={{marginTop: "10px", marginBottom: "10px"}}>
+        <Typography
+          variant="body1"
+          className="mb-6"
+          sx={{ marginTop: "10px", marginBottom: "10px" }}
+        >
           {project.description}
         </Typography>
         <div className="flex flex-wrap gap-2">
