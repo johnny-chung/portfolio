@@ -1,6 +1,10 @@
 // src/components/NameCard.tsx
 import React, { useEffect, useState } from "react";
 import Avatar from "@mui/material/Avatar";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+import PlaceIcon from "@mui/icons-material/Place";
 import "./nameCard.css"; // Import custom CSS for styling
 
 const NameCard: React.FC = () => {
@@ -40,19 +44,32 @@ const NameCard: React.FC = () => {
           </h2>
         </div>
       </div>
+      <h4 style={{marginBottom: "12px"}}>
+        <PlaceIcon style={{marginRight: "5px"}}/>
+        GTA, Canada
+      </h4>
       <div className="links">
         {/* Replace href with your actual links */}
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/johnny-wychung/"
           target="_blank"
           rel="noopener noreferrer"
         >
+          <LinkedInIcon style={{marginRight: "5px"}}/>
           LinkedIn
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/johnny-chung"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GitHubIcon style={{marginRight: "5px"}}/>
           GitHub
         </a>
-        <a href="mailto:your-email@example.com">Email</a>
+        <a href="mailto:johnny.chung2046@gmail.com">
+          <EmailIcon style={{marginRight: "5px"}}/>
+          johnny.chung2046@gmail.com
+        </a>
       </div>
     </div>
   );

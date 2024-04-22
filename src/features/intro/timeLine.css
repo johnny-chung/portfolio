@@ -44,8 +44,9 @@
 }
 
 .date {
-  width: 180px;
+  min-width: 150px;
   padding-top: 45px;
+  margin-right: 10px;
 }
 
 .card {
@@ -66,7 +67,6 @@
 .card-description {
   margin-top: 10px;
 }
-
 
 .timeline-container::after {
   content: "";

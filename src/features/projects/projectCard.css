@@ -1,0 +1,24 @@
+.card-img {
+  width: 100px;
+  object-fit: cover;
+  background-color: #eee9ea;
+}
+
+/* projectCard.module.css */
+.card {
+  width: 90vw;
+}
+
+
+.skill {
+  margin-right: 8px; /* Add space between skills */
+  margin-bottom: 8px; /* Add space between lines */
+  background-color: #3A5154;
+  color: #e2e1e1;
+  
+}
+
+.skill:hover {
+  background-color: #c6c5c5; /* Light gray-green color */
+  color: #283618; /* White color for text */
+}

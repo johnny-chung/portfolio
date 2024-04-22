@@ -1,45 +1,53 @@
 import React from "react";
 import { Card, CardContent, Typography } from "@mui/material";
-import { Carousel } from "react-responsive-carousel";
+import Slider from "react-slick";
 import { Project } from "../../types/types";
+import "./projectCard.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import image1 from "../../assets/images/download.png";
 
 interface ProjectCardProps {
   project: Project;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-    return (
-      <Card className="max-w-xs m-4 rounded-lg shadow-lg">
-        <Carousel
-          showThumbs={false}
-          showStatus={false}
-          autoPlay={true}
-          interval={5000} // 5 seconds
-          infiniteLoop={true} // Loop back to the first slide after reaching the end
-        >
-          {project.images.map((image, index) => (
-            <div key={index}>
-              <img src={image} alt={`Project ${project.id}`} />
-            </div>
-          ))}
-        </Carousel>
-        <CardContent>
-          <Typography variant="h5" component="h2" className="mb-2">
-            {project.title}
-          </Typography>
-          <Typography variant="body1" className="mb-4">
-            {project.description}
-          </Typography>
-          <div className="flex flex-wrap gap-2">
-            {project.skills.map((skill, index) => (
-              <span key={index} className="bg-gray-200 px-2 py-1 rounded">
-                {skill}
-              </span>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-    );
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
-  
-  export default ProjectCard;
+
+  return (
+    <Card className="max-w-xs m-6 rounded-lg shadow-lg" sx={{ minWidth: "500px", bgcolor: "#eee9ea"  }}>
+      <Slider {...settings}>
+        {project.images.map((image, index) => (
+          <div key={index}>
+            <img src={image} alt={`Project ${image}`} />
+          </div>
+        ))}
+      </Slider>
+      <CardContent>
+        <Typography variant="h5" component="h2" className="mb-4">
+          {project.title}
+        </Typography>
+        <Typography variant="body1" className="mb-6" sx={{marginTop: "10px", marginBottom: "10px"}}>
+          {project.description}
+        </Typography>
+        <div className="flex flex-wrap gap-2">
+          {project.skills.map((skill, index) => (
+            <span key={index} className="px-2 py-1 rounded skill">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
+
+export default ProjectCard;

@@ -5,7 +5,7 @@ import { projectsData } from "./projectData";
 
 const ProjectList: React.FC = () => {
   return (
-    <div className="project-list">
+    <div>
       {projectsData.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}

@@ -6,7 +6,7 @@ import { experiences } from "./experience_data";
 const Timeline: React.FC = () => {
   return (
     <div className="timeline-container">
-      <h2 className="text-xl font-semibold mb-4">My Journery</h2>
+      <h2 className="text-xl font-semibold mb-4">My Journey</h2>
       <div className="lists">
         {experiences.map((experience, index) => (
           <div key={index} className="item">
