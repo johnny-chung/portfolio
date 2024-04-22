@@ -20,9 +20,9 @@ export const projectsData: Project[] = [
       "Auth0",
     ],
     images: [
-      "https://www.flickr.com/photos/200502214@N05/shares/g470S1hs75",
-      "../../assets/images/download.png",
-      "../../assets/images/download.png",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713811801/portfolio/mobile_1_1_ala4q6.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713811814/portfolio/mobile_2_2_ptwuhs.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713811826/portfolio/mobile_3_3_d37pzx.jpg",
     ],
   },
   {
@@ -43,9 +43,10 @@ export const projectsData: Project[] = [
       "Auth0",
     ],
     images: [
-      "https://www.flickr.com/photos/200502214@N05/shares/g470S1hs75",
-      "../../assets/images/download.png",
-      "../../assets/images/download.png",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713803590/portfolio/lib-3_zdr150.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713803593/portfolio/lib-4_vsjqpm.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713803588/portfolio/lib-2_n84bry.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713803586/portfolio/lib-1_wnhkjb.jpg",
     ],
   },
   {
@@ -67,9 +68,10 @@ export const projectsData: Project[] = [
       "Docker",
     ],
     images: [
-      "https://www.flickr.com/photos/200502214@N05/shares/g470S1hs75",
-      "../../assets/images/download.png",
-      "../../assets/images/download.png",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713803596/portfolio/reversi_1_aimqac.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713803598/portfolio/reversi_2_nvpi9s.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713803601/portfolio/reversi_3_nerm4o.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713803604/portfolio/reversi_4_cmmgxr.jpg",
     ],
   },
   {
@@ -91,9 +93,9 @@ export const projectsData: Project[] = [
       "CSS",
     ],
     images: [
-      "https://www.flickr.com/photos/200502214@N05/shares/g470S1hs75",
-      "../../assets/images/download.png",
-      "../../assets/images/download.png",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713806393/portfolio/ig_1_wwlkym.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713806461/portfolio/ig_2_el9ag6.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713806475/portfolio/ig_3_ru3sh5.jpg",
     ],
   },
   {
@@ -103,9 +105,8 @@ export const projectsData: Project[] = [
     `,
     skills: ["React", "Typescript", "Redux TK", "Context API"],
     images: [
-      "https://www.flickr.com/photos/200502214@N05/shares/g470S1hs75",
-      "../../assets/images/download.png",
-      "../../assets/images/download.png",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713805068/portfolio/practice_1_twwo7b.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713805073/portfolio/practice_2_p6frj4.jpg",
     ],
   },
 
@@ -118,9 +119,8 @@ export const projectsData: Project[] = [
     `,
     skills: ["C++", "OOP", "Data structure & analysis"],
     images: [
-      "https://www.flickr.com/photos/200502214@N05/shares/g470S1hs75",
-      "../../assets/images/download.png",
-      "../../assets/images/download.png",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713806700/portfolio/c_1_nea4qn.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713806707/portfolio/c_2_jh97iq.jpg",
     ],
   },
 
@@ -131,9 +131,8 @@ export const projectsData: Project[] = [
     `,
     skills: ["React", "Tailwind CSS", "MUI", "Typescript"],
     images: [
-      "https://www.flickr.com/photos/200502214@N05/shares/g470S1hs75",
-      "../../assets/images/download.png",
-      "../../assets/images/download.png",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713804065/portfolio/portfolio_vmbgdu.jpg",
+      "https://res.cloudinary.com/dp2anoz4i/image/upload/v1713806891/portfolio/portfolio_2_mrqf2i.jpg",
     ],
   },
 ];
