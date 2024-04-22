@@ -1,5 +1,5 @@
 // src/components/NameCard.tsx
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import Avatar from "@mui/material/Avatar";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
