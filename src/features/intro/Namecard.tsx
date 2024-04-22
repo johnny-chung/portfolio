@@ -1,5 +1,5 @@
 // src/components/NameCard.tsx
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import Avatar from "@mui/material/Avatar";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -28,48 +28,50 @@ const NameCard: React.FC = () => {
   }, []);
   return (
     <div className="name-card-container">
-      <div className="name-card">
-        <Avatar
-          alt="Johnny"
-          src="/path/to/avatar.jpg"
-          sx={{ width: 120, height: 120 }}
-          className="avatar-large"
-        />
-        <div className="name-card-text">
-          <h1 id="typing-text1" className="text-4xl font-bold typing-text">
-            <span>Johnny</span>
-          </h1>
-          <h2 id="typing-text2" className="typing-text">
-            <span>{` A software developer`}</span>
-          </h2>
+      <div className="overlay">
+        <div className="name-card">
+          <Avatar
+            alt="Johnny"
+            src="https://res.cloudinary.com/dp2anoz4i/image/upload/v1713816219/portfolio/DSC_0803_z6q4zn.jpg"
+            sx={{ width: 120, height: 120 }}
+            className="avatar-large"
+          />
+          <div className="name-card-text">
+            <h1 id="typing-text1" className="text-4xl font-bold typing-text">
+              <span>Johnny</span>
+            </h1>
+            <h2 id="typing-text2" className="typing-text">
+              <span>{` A software developer`}</span>
+            </h2>
+          </div>
         </div>
-      </div>
-      <h4 style={{marginBottom: "12px"}}>
-        <PlaceIcon style={{marginRight: "5px"}}/>
-        GTA, Canada
-      </h4>
-      <div className="links">
-        {/* Replace href with your actual links */}
-        <a
-          href="https://www.linkedin.com/in/johnny-wychung/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkedInIcon style={{marginRight: "5px"}}/>
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/johnny-chung"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <GitHubIcon style={{marginRight: "5px"}}/>
-          GitHub
-        </a>
-        <a href="mailto:johnny.chung2046@gmail.com">
-          <EmailIcon style={{marginRight: "5px"}}/>
-          johnny.chung2046@gmail.com
-        </a>
+        <h4 style={{ marginBottom: "12px" }}>
+          <PlaceIcon style={{ marginRight: "5px" }} />
+          GTA, Canada
+        </h4>
+        <div className="links">
+          {/* Replace href with your actual links */}
+          <a
+            href="https://www.linkedin.com/in/johnny-wychung/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedInIcon style={{ marginRight: "5px" }} />
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/johnny-chung"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHubIcon style={{ marginRight: "5px" }} />
+            GitHub
+          </a>
+          <a href="mailto:johnny.chung2046@gmail.com">
+            <EmailIcon style={{ marginRight: "5px" }} />
+            johnny.chung2046@gmail.com
+          </a>
+        </div>
       </div>
     </div>
   );

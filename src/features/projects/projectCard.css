@@ -6,16 +6,21 @@
 
 /* projectCard.module.css */
 .card {
-  width: 90vw;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
+@media (min-width: 600px) {
+  .card {
+    max-width: 600px; /* Set maximum width to 600px for larger screens */
+  }
+}
 
 .skill {
   margin-right: 8px; /* Add space between skills */
   margin-bottom: 8px; /* Add space between lines */
-  background-color: #3A5154;
+  background-color: #3a5154;
   color: #e2e1e1;
-  
 }
 
 .skill:hover {
