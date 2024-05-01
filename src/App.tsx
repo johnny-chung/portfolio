@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./features/navBar/NavBar";
 import Intro from "./features/intro/Intro";
 import ProjectList from "./features/projects/ProjectList";
+import { Footer } from "./ui/Footer";
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
             <Route path="/projects" element={<ProjectList />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </Router>
   );
