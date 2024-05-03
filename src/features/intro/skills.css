@@ -10,13 +10,14 @@
 .skill {
   margin-right: 8px; /* Add space between skills */
   margin-bottom: 8px; /* Add space between lines */
-  background-color: #3a5154;
-  color: #e2e1e1;
+  padding: 8px;
+  background-color: #3C5B6F;
+  color: #e6e6e6;
 }
 
 .skill:hover {
   background-color: #e6e6e6; /* Light gray-green color */
-  color: #283618; /* White color for text */
+  color: #2c4e80; /* White color for text */
 }
 
 .skill:first-child {

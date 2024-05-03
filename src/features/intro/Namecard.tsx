@@ -31,7 +31,7 @@ const NameCard: React.FC = () => {
       <div className="overlay">
         <div className="name-card">
           <Avatar
-            alt="Johnny"
+            alt="Johnny C."
             src="https://res.cloudinary.com/dp2anoz4i/image/upload/v1713816219/portfolio/DSC_0803_z6q4zn.jpg"
             sx={{ width: 120, height: 120 }}
             className="avatar-large"
@@ -41,7 +41,7 @@ const NameCard: React.FC = () => {
               <span>Johnny</span>
             </h1>
             <h2 id="typing-text2" className="typing-text">
-              <span>{` A software developer`}</span>
+              <span>{` Software developer`}</span>
             </h2>
           </div>
         </div>

@@ -28,7 +28,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 3px; /* Center the line */
+  left: 4px; /* Center the line */
   width: 2px;
   height: 100%; /* Full height of the container */
   background-color: #000000; /* Light grey color for the line */
@@ -44,9 +44,9 @@
 }
 
 .date {
-  min-width: 150px;
+  min-width: 110px;
   padding-top: 45px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .card {
@@ -54,7 +54,7 @@
   width: 90%;
   padding: 20px;
   margin: 20px;
-  background-color: #f9fafb; /* Off-white background color */
+  background-color: #e3ecf1; /* Off-white background color */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
@@ -77,7 +77,7 @@
   height: 100px; /* Height of the fade effect */
   background: linear-gradient(
     transparent,
-    #ffffff
+    #f0f6f9
   ); /* Gradient from transparent to white */
   pointer-events: none; /* Make the overlay transparent to pointer events */
 }

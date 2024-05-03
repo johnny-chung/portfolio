@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <Router>
       <div>
         <NavBar />
-        <div style={{ paddingTop: "80px" }}>
+        <div style={{ paddingTop: "60px" }}>
           {" "}
           {/* Adjust 64px to match the height of your AppBar */}
           <Routes>

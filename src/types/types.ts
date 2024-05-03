@@ -8,6 +8,9 @@ export interface Project {
   id: number;
   title: string;
   description: string;
+  github?: string;
+  youtube?: string;
+  demo?: string;
   skills: string[];
   images: string[];
 }

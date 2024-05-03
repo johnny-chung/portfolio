@@ -1,13 +1,12 @@
 .card-img {
-  width: 100px;
+  width: 150px;
   object-fit: cover;
-  background-color: #eee9ea;
+  background-color: #EEF7FF;
 }
 
 /* projectCard.module.css */
 .card {
-  max-width: 90vw;
-  margin: 0 auto;
+  margin: 10 auto;
 }
 
 @media (min-width: 600px) {

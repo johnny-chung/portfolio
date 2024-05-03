@@ -15,13 +15,20 @@ const Timeline: React.FC = () => {
             </div>
             <div className="line-container">
               <div className="dot"></div>
-              <Paper key={index} elevation={3} className="card">
+              <Paper key={index} elevation={3} className="card" sx={{ minWidth: "300px", bgcolor: "rgb(233, 239, 242)" }}>
                 <Typography variant="h6" className="card-title">
                   {experience.title}
                 </Typography>
-                <Typography variant="body1" className="card-description">
-                  {experience.description}
-                </Typography>
+                {experience.description.split("\n").map((line, index) => (
+                  <Typography
+                    key={index}
+                    variant="body1"
+                    className="mb-2" // Adjust margin as needed
+                    sx={{ marginTop: index === 0 ? "10px" : 0 }} // Add marginTop for first line
+                  >
+                    {line}
+                  </Typography>
+                ))}
               </Paper>
             </div>
           </div>
