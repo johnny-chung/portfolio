@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <Card
       className="max-w-md m-6 rounded-lg shadow-lg"
-      sx={{ minWidth: "300px", bgcolor: "rgb(233, 239, 242)" }}
+      sx={{ minWidth: "300px", bgcolor: "rgb(233, 239, 242)", margin: "10px" }}
     >
       <Slider {...settings}>
         {project.images.map((image, index) => (
