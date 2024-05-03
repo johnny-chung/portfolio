@@ -14,7 +14,7 @@ const ProjectList: React.FC = () => {
   });
 
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="container mx-auto px-4 py-8 flex flex-wrap justify-center">
       {trail.map((style, index) => (
         <animated.div key={projectsData[index].id} style={style}>
           <ProjectCard project={projectsData[index]} />
