@@ -38,7 +38,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         ))}
       </Slider>
       <CardContent sx={{ margin: "10px" }}>
-        <Typography variant="h5" component="h2" className="mb-4">
+        <Typography
+          variant="h5"
+          component="h2"
+          className="mb-4"
+          sx={{ marginLeft: "5px" }}
+        >
           {project.title}
         </Typography>
         {project.description.split("\n").map((line, index) => (
@@ -46,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             key={index}
             variant="body1"
             className="mb-2" // Adjust margin as needed
-            sx={{ marginTop: index === 0 ? "10px" : 0 }} // Add marginTop for first line
+            sx={{ marginLeft: "5px", marginTop: index === 0 ? "10px" : 0 }} // Add marginTop for first line
           >
             {line}
           </Typography>
