@@ -4,54 +4,66 @@
   background-size: cover;
   background-position: center;
   /* Desaturate the background image */
-  filter: grayscale(100%);
+  filter: grayscale(60%);
   /* Grey overlay */
   background-color: rgba(128, 128, 128, 0.1);
   height: 90vh;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  margin-bottom: 80px;
 }
 
 .overlay {
   padding: 10px;
   width: 100%;
-  height: 100%;
-  background-color: rgba(223, 223, 223, 0.7); /* Grey overlay with opacity */
+  background-color: rgba(185, 202, 246, 0.8); /* Grey overlay with opacity */
   border-radius: 8px; /* Ensure the overlay matches the container's border-radius */
 }
 
 .name-card {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  flex-direction: row; /* Arrange avatar and info horizontally */
+  align-items: center; /* Vertically center content */
+  justify-content: center;
 }
 
-.avatar-large {
-  margin-right: 20px;
+.avatar-section {
+  width: 20vw; /* Initially set to 30% of the container width */
+  height: 20vw;
+  padding: 20px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column; /* Arrange info vertically */
+  align-items: flex-start; /* Align items to the start */
+  margin-left: 20px; /* Add spacing between avatar and info */
 }
 
 .name-card-text h1 {
-  padding-bottom: 8px;
-  color: #283618; /* Dark green-gray color */
-  font-size: 2rem; /* Reduce font size for "Johnny" */
+  margin-bottom: 8px;
+  color: #0e1f80; 
+  font-size: 4rem; /* Reduce font size for "Johnny" */
 }
 
 .name-card-text h2 {
-  color: #3c492d; /* Dark green-gray color */
-  font-size: 1.2rem; /* Reduce font size for "A software developer" */
+  color: #3955a8; 
+  font-size: 2rem; /* Reduce font size for "A software developer" */
 }
 
 .links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column; /* Arrange links vertically */
+  margin-top: 12px;
 }
 
 .links a {
   color: #1d2625; /* Dark gray text color */
   text-decoration: none;
   transition: color 0.3s ease; /* Smooth color transition on hover */
-  white-space: nowrap; /* Prevent links from wrapping */
 }
 
 .links a:hover {
@@ -62,8 +74,9 @@
   overflow: hidden;
   white-space: nowrap;
   margin: 0;
-  font-size: 1.5rem; /* Adjust size as needed */
+  font-size: 4rem; /* Adjust size as needed */
   width: 0;
+  height: 4rem;
 }
 
 .typing {
@@ -81,15 +94,27 @@
 
 /* Add media query for smaller screens */
 @media (max-width: 600px) {
-  .avatar-large {
-    width: 80px; /* Reduce avatar size on smaller screens */
-    height: 80px; /* Reduce avatar size on smaller screens */
-  }
-  .name-card-text h1 {
-    font-size: 1.5rem; /* Further reduce font size for "Johnny" on smaller screens */
+  .name-card {
+    flex-direction: column; /* Arrange avatar and info vertically on smaller screens */
+    align-items: center; /* Horizontally center content */
   }
 
+  .info-section {
+    align-items: center; /* Center info items horizontally */
+    margin-top: 20px; /* Add spacing between avatar and info */
+  }
+  .avatar-section {
+    width: 40vw; /* Initially set to 30% of the container width */
+    height: 40vw; /* Maintain aspect ratio */
+  }
+  .name-card-text h1 {
+    font-size: 2rem;
+  }
   .name-card-text h2 {
-    font-size: 1rem; /* Further reduce font size for "A software developer" on smaller screens */
+    font-size: 1.2rem;
+  }
+  .typing-text {
+    font-size: 2rem;
+    height: 3rem;
   }
 }

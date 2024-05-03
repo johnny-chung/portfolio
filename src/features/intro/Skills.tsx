@@ -14,7 +14,7 @@ const SkillsShowcase: React.FC = () => {
 
   return (
     <div className="mt-8 skills-container">
-      <h2 className="text-xl font-semibold mb-4">What I Can Bring</h2>
+      <h2 className="text-xl font-semibold mb-4">What I Can Offer</h2>
       <div className="flex flex-wrap space-x-2">
         {transitions((style, item) => (
           <animated.span
