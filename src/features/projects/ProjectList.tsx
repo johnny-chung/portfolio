@@ -7,8 +7,8 @@ import { useTrail, animated } from "react-spring";
 const ProjectList: React.FC = () => {
   const trail = useTrail(projectsData.length, {
     opacity: 1,
-    transform: "translateY(0px)",
-    from: { opacity: 0, transform: "translateY(20px)" },
+    transform: "translateX(0px)",
+    from: { opacity: 0, transform: "translateX(-30px)" },
     config: { mass: 1, tension: 120, friction: 14 },
     delay: 500, // Initial delay before the animation starts
   });

@@ -3,9 +3,10 @@
   flex-direction: column;
   margin-top: 20px;
   overflow-y: scroll; /* Enable vertical scrolling */
-  height: 400px; /* Adjust the height as needed */
+  height: 500px; /* Adjust the height as needed */
   position: relative; /* Ensure ::before and ::after pseudo-elements position relative to this container */
   overflow: hidden; /* Clip content that extends beyond the container */
+  padding-bottom: 1%;
 }
 
 .lists {

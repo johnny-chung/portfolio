@@ -58,8 +58,8 @@ const Intro: React.FC = () => {
   const timelineProps = useSpring({
     opacity: isTimelineVisible ? 1 : 0,
     from: { opacity: 0 },
-    delay: 1000,
-    config: { duration: 2000 },
+    delay: 1500,
+    config: { duration: 2500 },
   });
 
   return (
